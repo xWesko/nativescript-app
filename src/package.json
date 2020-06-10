@@ -1,0 +1,10 @@
+{
+  "main": "main.js",
+  "android": {
+    "v8Flags": "--expose_gc",
+    "markingMode": "full"
+  },
+  "dependencies": {
+    "tns-core-modules": "^6.5.5"
+  }
+}

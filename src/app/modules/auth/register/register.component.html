@@ -1,0 +1,81 @@
+<GridLayout>
+    <GridLayout class="background"></GridLayout>
+    <!-- Contenedor principal -->
+    <DockLayout style="padding: 25;">
+        <StackLayout dock="top">
+            <Label class="title" text="Registro"></Label>
+            <!-- Caja de sign up -->
+            <StackLayout marginTop="1%" class="white-box">
+                <Label
+                    class="title-login small"
+                    text="Nos encantaría que te unas a nosotros."
+                    style="color: #00ba40; margin-top: 15;"
+                ></Label>
+                <FlexboxLayout
+                    justifyContent="center"
+                    style="margin-bottom:15; margin-top: 15;"
+                >
+                    <Button
+                        (tap)="onLoginGoogle()"
+                        style="margin-right: 15%"
+                        class="button-outline google"
+                    ></Button>
+                    <Button
+                        (tap)="onLoginFacebook()"
+                        class="button-outline facebook"
+                    ></Button>
+                </FlexboxLayout>
+                <Label
+                    style="color: #FF4F9A; padding: 0 10"
+                    class="title-login small"
+                    opacity="0.4"
+                    text="Tenemos múltiples opciones para que te unas a nosotros"
+                ></Label>
+                <TextField
+                    class="tf-gray user-green"
+                    style="margin-left: 10; margin-right: 10;"
+                    hint="Nombre"
+                >
+                </TextField>
+                <TextField
+                    [(ngModel)]="email"
+                    class="tf-gray email-green"
+                    style="margin-left: 10; margin-right: 10;"
+                    hint="Usuario o Email"
+                    keyboardType="email"
+                    autocapitalizationType="none"
+                >
+                </TextField>
+                <TextField
+                    [(ngModel)]="password"
+                    class="tf-gray password-green"
+                    style="margin-left: 10; margin-right: 10;"
+                    hint="Contraseña"
+                    secure="true"
+                >
+                </TextField>
+                <Button
+                    (tap)="onRegister()"
+                    style="margin-bottom: 15; margin-top: 2;"
+                    class="button button-second arrow"
+                ></Button>
+            </StackLayout>
+        </StackLayout>
+        <GridLayout dock="bottom" columns="*, *">
+            <Button
+                class="button button-three"
+                backgroundColor="white"
+                col="0"
+                text="Ingresar"
+                nsRouterLink="/"
+            ></Button>
+            <Button
+                color="white"
+                class="button button-second"
+                text="Registro"
+                col="1"
+                nsRouterLink="/register"
+            ></Button>
+        </GridLayout>
+    </DockLayout>
+</GridLayout>
