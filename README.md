@@ -1,6 +1,6 @@
 # NativeScript + Angular ❤
 
-### Como instalar y configurar el CLI de Nativescript.
+### Como instalar y configurar el CLI de Nativescript. 💻
 https://www.youtube.com/watch?v=5Tj4MZHJb9A&t=92s
 
 Intalar NPM:
