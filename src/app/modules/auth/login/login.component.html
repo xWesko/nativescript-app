@@ -1,20 +1,18 @@
 <GridLayout>
-    <GridLayout class="background"></GridLayout>
     <DockLayout style="padding: 25">
         <StackLayout dock="top">
             <Label class="title" text="Ingresar"></Label>
             <StackLayout marginTop="1%" class="white-box">
-                <Image style="margin-top: -180;" src="res://salad"></Image>
-                <Label text="Bienvenido" class="title-login big"></Label>
+                <Label text="Diablos Plus" class="title-login big"></Label>
                 <Label
-                    text="Nos alegra tenerte de vuelta"
+                    text="Si ya tienes una cuenta, inicia sesión."
                     class="title-login small"
                 ></Label>
                 <TextField
                     [(ngModel)]="email"
                     class="tf-gray user"
                     style="margin-left: 10; margin-right: 10;"
-                    hint="Nombre de usuario o Email"
+                    hint="Correo electrónico."
                     keyboardType="email"
                     autocapitalizationType="none"
                 >

@@ -1,12 +1,5 @@
-.background {
-    background-image: url("res://background_login");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 .title-login {
-    color: $color_violet;
+    color: $color_red;
     text-align: center;
     &.big {
         font-size: 40;

@@ -27,7 +27,7 @@
     background-position: 1% 50%;
     &.user {
         background-image: url("res://ic_user");
-        placeholder-color: $color_violet;
+        placeholder-color: $color_red;
     }
     &.user-green {
         background-image: url("res://ic_user_green");
@@ -39,7 +39,7 @@
     }
     &.password {
         background-image: url("res://ic_password");
-        placeholder-color: $color_violet;
+        placeholder-color: $color_red;
     }
     &.password-green {
         background-image: url("res://ic_password_green");
@@ -53,13 +53,13 @@
     border-radius: 12;
     &.button-one {
         color: white;
-        background-color: $color_violet;
+        background-color: $color_red;
     }
     &.button-second {
-        background-color: $color_green;
+        background-color: $color_dark;
     }
     &.button-three {
-        color: $color_green;
+        color: $color_dark;
         background-color: white;
     }
     &.arrow {
@@ -89,7 +89,7 @@
     }
     &.green {
         color: $color_green;
-        border-color: $color_green;
+        border-color: $color_dark;
         width: 80%;
     }
     &.gray {
