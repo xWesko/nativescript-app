@@ -27,6 +27,7 @@ export class RestaurantsComponent {
         this.restaurantService.search(query).subscribe(
             response => {
                 this.data.push(response["restaurants"]);
+                console.log(response);
             },
             error => console.log(error)
         );

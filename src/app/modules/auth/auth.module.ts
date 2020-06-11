@@ -4,6 +4,7 @@ import { LoginComponent } from "./login/login.component";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { RegisterComponent } from "./register/register.component";
 
+
 // Uncomment and add to NgModule imports if you need to use two-way binding
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { AuthGuard } from "~/app/auth-guard.service";
@@ -20,7 +21,7 @@ const routes: Routes = [
     {
         path: "register",
         component: RegisterComponent
-    }
+    },
 ];
 
 @NgModule({
